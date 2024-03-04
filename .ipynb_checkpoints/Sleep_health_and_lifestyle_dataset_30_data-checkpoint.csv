@@ -1,0 +1,109 @@
+Gender;Age;Occupation;Sleep Duration;Quality of Sleep;Physical Activity Level;Stress Level;BMI Category;Systolic;Diastolic;Heart Rate;Daily Steps;Sleep Disorder
+Male;27;Software Engineer;6.1;6;42;6;Overweight;126;83;77;4200;None
+Male;28;Doctor;6.2;6;60;8;Normal;125;80;75;10000;None
+Male;28;Doctor;6.2;6;60;8;Normal;125;80;75;10000;None
+Male;28;Sales Representative;5.9;4;30;8;Obese;140;90;85;3000;Sleep Apnea
+Male;28;Sales Representative;5.9;4;30;8;Obese;140;90;85;3000;Sleep Apnea
+Male;28;Software Engineer;5.9;4;30;8;Obese;140;90;85;3000;Insomnia
+Male;29;Teacher;6.3;6;40;7;Obese;140;90;82;3500;Insomnia
+Male;29;Doctor;7.8;7;75;6;Normal;120;80;70;8000;None
+Male;29;Doctor;7.8;7;75;6;Normal;120;80;70;8000;None
+Male;29;Doctor;7.8;7;75;6;Normal;120;80;70;8000;None
+Male;29;Doctor;6.1;6;30;8;Normal;120;80;70;8000;None
+Male;29;Doctor;7.8;7;75;6;Normal;120;80;70;8000;None
+Male;29;Doctor;6.1;6;30;8;Normal;120;80;70;8000;None
+Male;29;Doctor;6.0;6;30;8;Normal;120;80;70;8000;None
+Male;29;Doctor;6.0;6;30;8;Normal;120;80;70;8000;None
+Male;29;Doctor;6.0;6;30;8;Normal;120;80;70;8000;None
+Female;29;Nurse;6.5;5;40;7;Normal;132;87;80;4000;Sleep Apnea
+Male;29;Doctor;6.0;6;30;8;Normal;120;80;70;8000;Sleep Apnea
+Female;29;Nurse;6.5;5;40;7;Normal;132;87;80;4000;Insomnia
+Male;30;Doctor;7.6;7;75;6;Normal;120;80;70;8000;None
+Male;30;Doctor;7.7;7;75;6;Normal;120;80;70;8000;None
+Male;30;Doctor;7.7;7;75;6;Normal;120;80;70;8000;None
+Male;30;Doctor;7.7;7;75;6;Normal;120;80;70;8000;None
+Male;30;Doctor;7.7;7;75;6;Normal;120;80;70;8000;None
+Male;30;Doctor;7.8;7;75;6;Normal;120;80;70;8000;None
+Male;30;Doctor;7.9;7;75;6;Normal;120;80;70;8000;None
+Male;30;Doctor;7.8;7;75;6;Normal;120;80;70;8000;None
+Male;30;Doctor;7.9;7;75;6;Normal;120;80;70;8000;None
+Male;30;Doctor;7.9;7;75;6;Normal;120;80;70;8000;None
+Male;30;Doctor;7.9;7;75;6;Normal;120;80;70;8000;None
+Male ;30;Doctor;6.0;6;75;6;Normal;125;80;77;8000;?
+Langkah 1;;;;;;;;;;;;
+"P(Sleep Disorder = ""None"")  = 23/30 ";;;0.77;;;;;;;;;
+"P(Sleep Disorder = ""Insomnia"")  = 3/30 ";;;0.1;;;;;;;;;
+"P(Sleep Disorder = ""Sleep Apnea"")  = 4/30 ";;;0.13;;;;;;;;;
+;;;;;;;;;;;;
+Langkah 2;;;;;;;;;;;;
+"Hitung P(X|Ci) untuk ""Sleep Disorder"" = None ";;;;;;;;;;;;
+;;;;;;;;;;;;
+"P(Gender = ""Male"" | Sleep Disorder = ""None"")  = 23/23 =";;;;1;;;;;;;;
+"P(Age = ""30"" | Sleep Disorder = ""None"")  = 11/23 = ";;;;0.48;;;;;;;;
+"P(Occupation = ""Doctor"" | Sleep Disorder = ""None"")  = 22/23  =";;;;0.96;;;;;;;;
+"P(Sleep Duration = ""6.0"" | Sleep Disorder = ""None"")  = 3/23  =";;;;0.13;;;;;;;;
+"P(Quality of Sleep = ""6"" | Sleep Disorder = ""None"")  = 8/23 =";;;;0.35;;;;;;;;
+"P(Physical Activity Level = ""75"" | Sleep Disorder = ""None"")  = 15/23  =";;;;0.65;;;;;;;;
+"P(Stress Level = ""6"" | Sleep Disorder = ""None"")  = 16/23 =";;;;0.70;;;;;;;;
+"P(BMI Category = ""Normal"" | Sleep Disorder = ""None"")  = 22/23 =";;;;0.96;;;;;;;;
+"P(Systolic = ""125"" | Sleep Disorder = ""None"")  = 2/23 =";;;;0.08;;;;;;;;
+"P(Diastolic = ""80"" | Sleep Disorder = ""None"")  = 22/23 =";;;;0.96;;;;;;;;
+"P(Heart Rate = ""77"" | Sleep Disorder = ""None"")  = 1/23 =";;;;0.04;;;;;;;;
+"P(Daily Steps = ""8000"" | Sleep Disorder = ""None"")  = 20/23 =";;;;0.87;;;;;;;;
+;;;;;;;;;;;;
+"P(X|Ci) untuk ""Sleep Disorder"" = None ";;;;;;;;;;;;
+ 1 * 0.48 * 0.96 * 0.13 * 0.35 * 0.65 * 0.70 * 0.96 * 0.08 * 0.96 * 0.04 *  0.87 =  ;;;;0.00002448;;;;;;;;
+;;;;;;;;;;;;
+"Hitung P(X|Ci) untuk ""Sleep Disorder"" = Insomnia ";;;;;;;;;;;;
+;;;;;;;;;;;;
+"P(Gender = ""Male"" | Sleep Disorder = ""Insomnia"")  = 2/23 =";;;;0.08;;;;;;;;
+"P(Age = ""30"" | Sleep Disorder = ""Insomnia"")  = 0/23 = ";;;;0;;;;;;;;
+"P(Occupation = ""Doctor"" | Sleep Disorder = ""Insomnia"")  = 0/23  =";;;;0;;;;;;;;
+"P(Sleep Duration = ""6.0"" | Sleep Disorder = ""Insomnia"")  = 0/23  =";;;;0;;;;;;;;
+"P(Quality of Sleep = ""6"" | Sleep Disorder = ""Insomnia"")  = 1/23 =";;;;0.04;;;;;;;;
+"P(Physical Activity Level = ""75"" | Sleep Disorder = ""Insomnia"")  = 0/23  =";;;;0;;;;;;;;
+"P(Stress Level = ""6"" | Sleep Disorder = ""Insomnia"")  = 0/23 =";;;;0;;;;;;;;
+"P(BMI Category = ""Normal"" | Sleep Disorder = ""Insomnia"")  = 1/23 =";;;;0.04;;;;;;;;
+"P(Systolic = ""125"" | Sleep Disorder = ""Insomnia"")  = 0/23 =";;;;0;;;;;;;;
+"P(Diastolic = ""80"" | Sleep Disorder = ""Insomnia"")  = 0/23 =";;;;0;;;;;;;;
+"P(Heart Rate = ""77"" | Sleep Disorder = ""Insomnia"")  = 0/23 =";;;;0;;;;;;;;
+"P(Daily Steps = ""8000"" | Sleep Disorder = ""Insomnia"")  = 0/23 =";;;;0;;;;;;;;
+;;;;;;;;;;;;
+"P(X|Ci) untuk ""Sleep Disorder"" = Insomnia ";;;;;;;;;;;;
+0.08 * 0 * 0 * 0 * 0.04 * 0 * 0 * 0.04 * 0 * 0 * 0 * 0 = ;;;;0;;;;;;;;
+;;;;;;;;;;;;
+"Hitung P(X|Ci) untuk ""Sleep Disorder"" = Sleep Apnea";;;;;;;;;;;;
+;;;;;;;;;;;;
+"P(Gender = ""Male"" | Sleep Disorder = ""Sleep Apnea"")  = 3/23 =";;;;0.13;;;;;;;;
+"P(Age = ""30"" | Sleep Disorder = ""Sleep Apnea"")  = 0/23 = ";;;;0;;;;;;;;
+"P(Occupation = ""Doctor"" | Sleep Disorder = ""Sleep Apnea"")  = 1/23  =";;;;0.04;;;;;;;;
+"P(Sleep Duration = ""6.0"" | Sleep Disorder = ""Sleep Apnea"")  = 1/23  =";;;;0.04;;;;;;;;
+"P(Quality of Sleep = ""6"" | Sleep Disorder = ""Sleep Apnea"")  = 1/23 =";;;;0.04;;;;;;;;
+"P(Physical Activity Level = ""75"" | Sleep Disorder = ""Sleep Apnea"")  = 0/23  =";;;;0;;;;;;;;
+"P(Stress Level = ""6"" | Sleep Disorder = ""Sleep Apnea"")  = 0/23 =";;;;0;;;;;;;;
+"P(BMI Category = ""Normal"" | Sleep Disorder = ""Sleep Apnea"")  = 2/23 =";;;;0.08;;;;;;;;
+"P(Systolic = ""125"" | Sleep Disorder = ""Sleep Apnea"")  = 0/23 =";;;;0;;;;;;;;
+"P(Diastolic = ""80"" | Sleep Disorder = ""Sleep Apnea"")  = 1/23 =";;;;0.04;;;;;;;;
+"P(Heart Rate = ""77"" | Sleep Disorder = ""Sleep Apnea"")  = 0/23 =";;;;0;;;;;;;;
+"P(Daily Steps = ""8000"" | Sleep Disorder = ""Sleep Apnea"")  = 1/23 =";;;;0.04;;;;;;;;
+;;;;;;;;;;;;
+"P(X|Ci) untuk ""Sleep Disorder"" = Sleep Apnea ";;;;;;;;;;;;
+0.13 * 0 * 0.04 * 0.04 * 0.04 * 0 * 0 * 0.08 * 0 * 0.04 * 0 * 0.04 = ;;;;0;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+Langkah 3;;;;;;;;;;;;
+Hitung P(Ci |X) dengan persamaan;;;;;;;;;;;;
+"Sleep Disorder = ""None""";;;;;;;;;;;;
+P(Ci ) = 0.77;;;;;;;;;;;;
+P(X|Ci) = 0.00002448;;;;;;;;;;;;
+P(Ci |X) = 0.77 * 0.00002448 = 0.0000188496;;;;;;;;;;;;
+;;;;;;;;;;;;
+"Sleep Disorder = ""Insomnia""";;;;;;;;;;;;
+P(Ci ) = 0.1;;;;;;;;;;;;
+P(X|Ci) = 0;;;;;;;;;;;;
+P(Ci |X) = 0.1 * 0 = 0;;;;;;;;;;;;
+;;;;;;;;;;;;
+"Sleep Disorder = ""Sleep Apnea""";;;;;;;;;;;;
+P(Ci ) = 0.13;;;;;;;;;;;;
+P(X|Ci) = 0;;;;;;;;;;;;
+P(Ci |X) = 0.13 * 0 = 0;;;;;;;;;;;;
